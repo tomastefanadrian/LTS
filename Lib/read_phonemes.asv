@@ -1,0 +1,13 @@
+function [phonemes error_code]=read_phonemes(doc)
+
+%RO
+%Functie pentru 
+
+
+
+num_phoneme=count_kids(arbore,'/rules/phonemes/p');%numarul de foneme - the number of phonemes
+for i=1:num_phoneme
+    temp1 = find(arbore,strcat('/rules/phonemes/p[',num2str(i),']'));
+    temp2 = children(arbore,temp1);
+    phonemes{i}=get(arbore,temp2,'value'); %sirul care contine temporar fonemele - temporary string with phonemes
+end

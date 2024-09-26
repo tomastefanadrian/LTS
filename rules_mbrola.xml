@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rules>
+
+<define_groups>
+	<cons>B,C,D,F,G,H,J,K,L,M,N,P,R,S,s,Q,W,T,t,V,X,Z</cons>
+	<vowel>A,a,E,I,i,O,U,Y</vowel>
+	<fric>S,s,t</fric>
+	<gr_h_O>B,F,G,L,X</gr_h_O>
+	<gr_EI>E,I</gr_EI>
+	<gr_CG>C,G</gr_CG>
+	<gr_AE>A,E</gr_AE>
+	<gr_AOU>A,O,U</gr_AOU>
+</define_groups>
+
+<phonemes>
+	<p>a</p>
+	<p>@</p>
+	<p>b</p>
+	<p>k</p>
+	<p>k_j</p>
+	<p>tS</p>
+	<p>d</p>
+	<p>e</p>
+	<p>e_X</p>
+	<p>f</p>
+	<p>g</p>
+	<p>dZ</p>
+	<p>g_j</p>
+	<p>h</p>
+	<p>i</p>
+	<p>1</p>
+	<p>j</p>
+	<p>i_0</p>
+	<p>Z</p>
+	<p>l</p>
+	<p>m</p>
+	<p>n</p>
+	<p>o</p>
+	<p>o_X</p>
+	<p>p</p>
+	<p>r</p>
+	<p>s</p>
+	<p>S</p>
+	<p>t</p>
+	<p>ts</p>
+	<p>u</p>
+	<p>w</p>
+	<p>v</p>
+</phonemes>
+
+<letters>
+	<l>A</l>
+	<l>a</l>
+	<l>B</l>
+	<l>C</l>
+	<l>D</l>
+	<l>E</l>
+	<l>F</l>
+	<l>G</l>
+	<l>H</l>
+	<l>I</l>
+	<l>i</l>
+	<l>J</l>
+	<l>K</l>
+	<l>L</l>
+	<l>M</l>
+	<l>N</l>
+	<l>O</l>
+	<l>P</l>
+	<l>Q</l>
+	<l>R</l>
+	<l>S</l>
+	<l>s</l>
+	<l>T</l>
+	<l>t</l>
+	<l>U</l>
+	<l>V</l>
+	<l>W</l>
+	<l>X</l>
+	<l>Y</l>
+	<l>Z</l>
+</letters>
+
+<for_A>
+	<r><t>a</t></r>
+</for_A>
+
+<for_a>
+	<r><t>@</t></r>
+</for_a>
+
+<for_D>
+	<r><t>d</t></r>
+</for_D>
+
+<for_F>
+	<r><t>f</t></r>
+</for_F>
+
+<for_i>
+	<r><t>1</t></r>
+</for_i>
+
+<for_J>
+	<r><t>Z</t></r>
+</for_J>
+
+<for_K>
+	<r>
+		<right>gr_EI</right>
+		<t>k_j</t>
+	</r>
+	<r>
+		<t>k</t>
+	</r>
+</for_K>
+
+<for_L>
+	<r><t>l</t></r>
+</for_L>
+
+<for_M>
+	<r><t>m</t></r>
+</for_M>
+
+<for_N>
+	<r><t>n</t></r>
+</for_N>
+
+<for_P>
+	<r><t>p</t></r>
+</for_P>
+
+<for_R>
+	<r><t>r</t></r>
+</for_R>
+
+<for_S>
+	<r><t>s</t></r>
+</for_S>
+
+<for_s>
+	<r><t>S</t></r>
+</for_s>
+
+<for_T>
+	<r><t>t</t></r>
+</for_T>
+
+<for_t>
+	<r><t>ts</t></r>
+</for_t>
+
+<for_V>
+	<r><t>v</t></r>
+</for_V>
+
+<for_X>
+	<r><t>k s</t></r>
+</for_X>
+
+<for_Z>
+	<r><t>z</t></r>
+</for_Z>
+
+<for_B>
+	<r>
+		<right>fric</right>
+		<t>p</t>
+	</r>
+	<r>
+		<t>b</t>
+	</r>
+</for_B>
+
+<for_C>
+	<r>
+		<right>gr_EI</right>
+		<t>tS</t>
+	</r>
+	<r>
+		<right>H</right>
+		<right>gr_EI</right>
+		<t>k_j</t>
+	</r>
+	<r>
+		<t>k</t>
+	</r>
+</for_C>
+
+<for_E>
+	<r>
+		<left>=</left>
+		<right>L</right>
+		<right>=</right>
+		<t>j e</t>
+	</r>
+	<r>
+		<left>=</left>
+		<right>L</right>
+		<right>E</right>
+		<right>=</right>
+		<t>j e</t>
+	</r>
+	<r>
+		<left>=</left>
+		<right>I</right>
+		<t>j e</t>
+	</r>
+	<r>
+		<left>=</left>
+		<left>C</left>
+		<left>R</left>
+		<right>A</right>
+		<t>e e_X</t>
+	</r>	
+	<r>
+		<left>cons</left>
+		<right>cons</right>
+		<t>e</t>
+	</r>
+	<r>
+		<left>gr_CG</left>
+		<right>A</right>
+		<t>=</t>
+	</r>
+	<r>
+		<left>gr_CG</left>
+		<left>H</left>
+		<right>A</right>
+		<t>=</t>
+	</r>
+	<r>
+		<left>=</left>
+		<right>A</right>
+		<right>=</right>
+		<t>j</t>
+	</r>
+	<r>
+		<right>A</right>
+		<right>=</right>
+		<t>e_X</t>
+	</r>
+	<r>
+		<left>=</left>
+		<right>U</right>
+		<right>=</right>
+		<t>j e</t>
+	</r>
+	<r>
+		<left>=</left>
+		<right>U</right>
+		<t>e</t>
+	</r>
+	<r>
+		<left>=</left>
+		<right>=</right>
+		<t>j e</t>
+	</r>
+	<r>
+		<left>=</left>
+		<right>S</right>
+		<right>T</right>
+		<t>j e</t>
+	</r>
+	<r>
+		<left>=</left>
+		<right>s</right>
+		<right>T</right>
+		<t>j e</t>
+	</r>
+	<r>
+		<left>=</left>
+		<left>N</left>
+		<right>A</right>
+		<t>e</t>
+	</r>
+	<r>
+		<right>A</right>
+		<t>e_X</t>
+	</r>
+	<r>
+		<right>=</right>
+		<t>e</t>
+	</r>
+	<r>
+		<left>E</left>
+		<t>j e</t>
+	</r>
+	<r>
+		<t>e</t>
+	</r>
+</for_E>
+
+<for_G>
+	<r>
+		<right>gr_EI</right>
+		<t>dZ</t>
+	</r>
+	<r>
+		<right>H</right>
+		<right>gr_EI</right>
+		<t>g_j</t>
+	</r>
+	<r>
+		<t>g</t>
+	</r>
+</for_G>
+
+<for_H>
+	<r>
+		<left>gr_CG</left>
+		<t>=</t>
+	</r>
+	<r>
+		<t>h</t>
+	</r>
+</for_H>
+
+<for_I>
+	<r>
+		<left>=</left>
+		<right>vowel</right>
+		<t>j</t>
+	</r>
+	<r>
+		<left>i</left>
+		<t>j</t>
+	</r>
+	<r>
+		<left>gr_CG</left>
+		<right>gr_AOU</right>
+		<t>=</t>
+	</r>
+	<r>
+		<left>gr_CG</left>
+		<left>H</left>
+		<right>gr_AOU</right>
+		<t>=</t>
+	</r>
+	<r>
+		<left>vowel</left>
+		<right>E</right>
+		<right>=</right>
+		<t>j</t>
+	</r>
+	<r>
+		<left>cons</left>
+		<right>E</right>
+		<right>=</right>
+		<t>i j</t>
+	</r>
+	<r>
+		<right>E</right>
+		<right>I</right>
+		<t>i j</t>
+	</r>
+	<r>
+		<right>E</right>
+		<right>=</right>
+		<t>i j</t>
+	</r>
+	<r>
+		<right>E</right>
+		<t>i j</t>
+	</r>
+	<r>
+		<left>=</left>
+		<left>cons</left>
+		<right>E</right>
+		<t>j</t>
+	</r>
+	<r>
+		<left>cons</left>
+		<right>A</right>
+		<t>i j</t>
+	</r>
+	<r>
+		<left>K</left>
+		<right>gr_AE</right>
+		<t>i j</t>
+	</r>
+	<r>
+		<left>vowel</left>
+		<right>A</right>
+		<right>=</right>
+		<t>j</t>
+	</r>
+	<r>
+		<right>A</right>
+		<t>i j</t>
+	</r>
+	<r>
+		<right>A</right>
+		<t>j</t>
+	</r>
+    <r>
+		<left>cons</left>
+		<right>O</right>
+		<right>N</right>
+		<t>i</t>	
+	</r>
+	<r>
+		<right>O</right>
+		<right>N</right>
+		<t>j</t>	
+	</r>
+	<r>
+		<right>O</right>
+		<t>i</t>
+	</r>
+	<r>
+		<right>I</right>
+		<right>=</right>
+		<t>i</t>
+	</r>
+	<r>
+		<right>I</right>
+		<t>i j</t>
+	</r>
+	<r>
+		<left>I</left>
+		<right>cons</right>
+		<t>i</t>
+	</r>
+	
+	<r>
+		<left>I</left>
+		<right>=</right>
+		<t>j</t>
+	</r>
+	<r>
+		<left>I</left>
+		<t>=</t>
+	</r>
+	<r>
+		<left>vowel</left>
+		<right>=</right>
+		<t>j</t>
+	</r>
+	<r>
+		<left>=</left>
+		<left>cons</left>
+		<right>=</right>
+		<t>i</t>
+	</r>
+	<r>
+		<left>cons</left>
+		<right>=</right>
+		<t>i_0</t>
+	</r>
+	<r>
+		<left>gr_CG</left>
+		<right>I</right>
+		<t>i</t>
+	</r>
+	<r>
+		<left>cons</left>
+		<right>I</right>
+		<right>cons</right>
+		<t>i j</t>
+	</r>
+	<r>
+		<left>G</left>
+		<right>vowel</right>
+		<t>=</t>
+	</r>
+	<r>
+		<t>i</t>
+	</r>
+</for_I>
+
+<for_O>
+	<r>
+		<left>=</left>
+		<right>A</right>
+		<right>gr_h_O</right>
+		<t>o</t>
+	</r>
+	<r>
+		<left>=</left>
+		<right>A</right>
+		<right>U</right>
+		<t>o</t>
+	</r>
+	<r>
+		<right>A</right>
+		<t>o_X</t>
+	</r>
+	<r>
+		<t>o</t>
+	</r>
+</for_O>
+
+<for_U>
+	<r>
+		<left>cons</left>
+		<right>A</right>
+		<t>u w</t>
+	</r>	
+	<r>
+		<left>vowel</left>
+		<right>A</right>
+		<t>u w</t>
+	</r>	
+	<r>
+		<left>cons</left>
+		<right>E</right>
+		<t>u</t>
+	</r>	
+	<r>
+		<left>cons</left>
+		<right>cons</right>
+		<t>u</t>
+	</r>	
+	<r>
+		<left>C</left>
+		<left>I</left>
+		<right>=</right>
+		<t>w</t>
+	</r>	
+	<r>
+		<left>vowel</left>
+		<right>=</right>
+		<t>w</t>
+	</r>	
+	<r>
+		<left>I</left>
+		<t>u</t>
+	</r>	
+	<r>
+		<left>O</left>
+		<right>L</right>
+		<t>u</t>
+	</r>	
+	<r>
+		<left>U</left>
+		<t>u</t>
+	</r>	
+	<r>
+		<right>U</right>
+		<t>u</t>
+	</r>	
+	<r>
+		<right>A</right>
+		<t>w</t>
+	</r>	
+	<r>
+		<left>Z</left>
+		<right>A</right>
+		<t>u</t>
+	</r>	
+	<r>
+		<right>I</right>
+		<t>u</t>
+	</r>	
+	<r>
+		<right>a</right>
+		<t>w</t>
+	</r>	
+	<r>
+		<right>E</right>
+		<right>A</right>
+		<t>w</t>
+	</r>	
+	<r>
+		<right>E</right>
+		<t>u</t>
+	</r>	
+	<r>
+		<right>A</right>
+		<right>=</right>
+		<t>w</t>
+	</r>	
+	<r>
+		<t>u</t>
+	</r>
+</for_U>
+
+<for_Y>
+	<r><t>i</t></r>
+</for_Y>
+
+<for_W>
+	<r><t>v</t></r>
+</for_W>
+
+<for_Q>
+	<r><t>k</t></r>
+</for_Q>
+
+</rules>
